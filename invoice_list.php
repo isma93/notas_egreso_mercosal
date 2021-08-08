@@ -5,7 +5,7 @@ include 'Invoice.php';
 $invoice = new Invoice();
 $invoice->checkLoggedIn();
 ?>
-<title>Sistema notas de egreso</title>
+<title>notas de egreso</title>
 <script src="js/invoice.js"></script>
 <link href="css/style.css" rel="stylesheet">
 <?php include('container.php');?>

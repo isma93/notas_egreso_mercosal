@@ -5,12 +5,12 @@ include 'Invoice.php';
 $invoice = new Invoice();
 $invoice->checkLoggedIn();
 ?>
-<title>baulphp : Sistema facturación PHP & MySQL</title>
+<title>Sistema notas de egreso</title>
 <script src="js/invoice.js"></script>
 <link href="css/style.css" rel="stylesheet">
 <?php include('container.php');?>
 <div class="container">		
-<h2 class="title">Sistema de facturación PHP</h2>
+<h2 class="title">Sistema notas de egreso</h2>
 <?php include('menu.php');?>			  
 <table id="data-table" class="table table-condensed table-striped">
 <thead>

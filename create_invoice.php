@@ -9,7 +9,7 @@ if(!empty($_POST['companyName']) && $_POST['companyName']) {
 	header("Location:invoice_list.php");	
 }
 ?>
-<title>baulphp : Sistema facturación PHP & MySQL</title>
+<title>Notas de egreso</title>
 <script src="js/invoice.js"></script>
 <link href="css/style.css" rel="stylesheet">
 <?php include('container.php');?>
@@ -18,7 +18,7 @@ if(!empty($_POST['companyName']) && $_POST['companyName']) {
 <div class="load-animate animated fadeInUp">
 <div class="row">
 <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-    <h2 class="title">Sistema de Facturación PHP</h2>
+    <h2 class="title">Sistema notas de egreso</h2>
     <?php include('menu.php');?>	
 </div>		    		
 </div>

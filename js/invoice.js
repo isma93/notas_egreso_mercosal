@@ -6,7 +6,7 @@
 		if ($('.itemRow:checked').length == $('.itemRow').length) {
 			$('#checkAll').prop('checked', true);
 		} else {
-			$('#checkAll').prop('checked', false);
+			$('#checkAll').prop('checked', true);
 		}
 	});  
 	var count = $(".itemRow").length;
@@ -26,7 +26,7 @@
 		$(".itemRow:checked").each(function() {
 			$(this).closest('tr').remove();
 		});
-		$('#checkAll').prop('checked', false);
+		$('#checkAll').prop('checked', true);
 		calculateTotal();
 	});		
 	$(document).on('blur', "[id^=quantity_]", function(){

@@ -9,11 +9,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="https://www.baulphp.com" class="navbar-brand">BAULPHP</a>
+          <a href="index.php" class="navbar-brand">Salir</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="https://www.baulphp.com">Portada</a></li>
+            <li class="active"><a href="">Portada</a></li>
            
           </ul>
          

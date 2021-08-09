@@ -3,8 +3,8 @@ session_start();
 include('header.php');
 $loginError = '';
 if (!empty($_POST['email']) && !empty($_POST['pwd'])) {
-	include 'Invoice.php';
-	$invoice = new Invoice();
+	include 'Invoice2.php';
+	$invoice = new Invoice2();
 	$user = $invoice->loginUsers($_POST['email'], $_POST['pwd']); 
 	if(!empty($user)) {
 		$_SESSION['user'] = $user[0]['first_name']."".$user[0]['last_name'];
@@ -18,7 +18,7 @@ if (!empty($_POST['email']) && !empty($_POST['pwd'])) {
 	}
 }
 ?>
-<title>BaulPHP : Sistema facturación PHP & MySQL</title>
+<title>Notas de egreso</title>
 <script src="js/invoice.js"></script>
 <link href="css/style.css" rel="stylesheet">
 <?php include('container.php');?>
@@ -26,7 +26,7 @@ if (!empty($_POST['email']) && !empty($_POST['pwd'])) {
   <div class="col-xs-6">
   
 <div class="heading">
-		<h2>Sistema facturación PHP & MySQL</h2>
+		<h2>Sistema de notas de egreso</h2>
 	</div>
 <div class="login-form">
 <form action="" method="post">
@@ -37,7 +37,7 @@ if (!empty($_POST['email']) && !empty($_POST['pwd'])) {
 <?php } ?>
 </div>         
 <div class="form-group">
-    <input name="email" id="email" type="email" class="form-control" placeholder="Email address" autofocus required>
+    <input name="email" id="email" type="text" class="form-control" placeholder="Código empleado" autofocus required>
 </div>
 <div class="form-group">
     <input type="password" class="form-control" name="pwd" placeholder="Password" required>
